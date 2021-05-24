@@ -35,10 +35,8 @@ public class BeerController {
 
 	@PutMapping("/{beerId}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
-	public void createNewBeer(@PathVariable("beerId") UUID id, @RequestBody BeerDto beerDto) {
-		/*
-		 * HttpHeaders httpHeaders = new HttpHeaders(); httpHeaders.add("Location",
-		 * "http://localhost:8080/api/v1/bee/" + beerDto.getId());
-		 */
+	public void updateBeer(@PathVariable("beerId") UUID id, @RequestBody BeerDto beerDto) {
+		
+		
 	}
 }
